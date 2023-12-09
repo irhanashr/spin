@@ -1,0 +1,16 @@
+<div class="spinning-wheel-container">
+    <div class="wheel" [class.spinning]="spinning" (click)="spinWheel()">
+      <div class="random-number" *ngIf="randomResult !== null && spinning">
+        {{ randomResult }}
+    </div>
+        <div class="random-number" *ngIf="result !== null && !spinning">
+            {{ result }} 
+      </div>
+    </div>
+    <button class="spin-again-btn" (click)="spinAgain()">
+        <h3>Repeat</h3></button>
+
+        <button class="spin-btn" (click)="spin()">
+            <h3>Spin</h3></button>
+  </div>
+  

@@ -1,0 +1,53 @@
+.spinning-wheel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+  }
+  
+  .wheel {
+    position: relative;
+    background-color: orange;
+    width: 500px;
+    height: 500px;
+    border: 10px solid #333;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 3s ease-out;
+    overflow: hidden;
+  }
+  
+  .random-number {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 150px;
+    font-weight: bold;
+    color: #0f0f0f;
+  }
+  
+  .spinning {
+    transform: rotate(1800deg); /* 5 spins */
+  }
+  
+  .result {
+    margin-top: 20px;
+  }
+
+  .spin-again-btn {
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    color: aliceblue;
+  }
+
+  .spin-btn {
+    margin-left: 20px;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    color: aliceblue;
+  }
+  
